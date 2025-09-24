@@ -14,7 +14,7 @@ spec:
     use: NonProduction
   queueManager:
     debug: false
-    imagePullPolicy: IfNotPresent
+    # imagePullPolicy: IfNotPresent
     livenessProbe:
       failureThreshold: 1
       initialDelaySeconds: 90
@@ -47,15 +47,15 @@ spec:
     availability:
       type: NativeHA
 
-    image: "replace"
-    imagePullPolicy: Always
+    # image: "replace"
+    # imagePullPolicy: Always
 
     storage:
       persistedData:
         enabled: false
       queueManager:
         type: persistent-claim
-      defaultClass: ibmc-block-gold
+      defaultClass: gp2
       recoveryLogs:
         enabled: false
 
