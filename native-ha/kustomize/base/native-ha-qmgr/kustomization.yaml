@@ -13,10 +13,10 @@ configMapGenerator:
   
 secretGenerator:
 # Create an MQSC configMap using generic MQSC which will be added to all queue managers and applied during bootstrap.
-- name: tls-secret-10022027
+- name: tls-secret-12012026
   files:
-  - tls.crt=qm1-10-01-2027.crt
-  - tls.key=qm1-10012027.key 
+  - tls.crt=qm1-12012026.crt
+  - tls.key=qm1-12012026.key 
 # Add the configMap that will be used for dynamic updates, this should be used queue manager wide i.e. stay the same in each environment.
 components:
 - ../../components/dynamic-mqsc/generic-qmgr
