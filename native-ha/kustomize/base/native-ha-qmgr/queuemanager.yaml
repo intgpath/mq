@@ -44,6 +44,14 @@ spec:
         enabled: false
 
   version: 9.4.3.0-r2
+  pki:
+    keys:
+      - name: example
+        secret:
+          secretName: tls-secret
+          items:
+          - tls.key
+          - tls.crt
   # web:
   #   console:
   #     authentication:
@@ -87,11 +95,4 @@ spec:
   #       secretName: example-06-app1-secret
   #       items:
   #         - app1.crt
-  pki:
-    keys:
-      - name: example
-        secret:
-          secretName: tls-secret
-          items:
-          - tls.key
-          - tls.crt
+  
