@@ -1,6 +1,5 @@
 resources:
 - ./queuemanager.yaml
-- ./tls-secret.yaml
 
 generatorOptions:
  disableNameSuffixHash: true
