@@ -10,6 +10,10 @@ configMapGenerator:
   behavior: create
   files:
   - static-definitions.mqsc
+- name: mqweb-configmap
+  behavior: create
+  files:
+  - mqwebuser.xml  
   
 secretGenerator:
 # Create an MQSC configMap using generic MQSC which will be added to all queue managers and applied during bootstrap.
