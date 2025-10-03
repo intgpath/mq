@@ -55,6 +55,16 @@ spec:
           items:
           - tls.key
           - tls.crt
+  web:
+    console:
+      authentication:
+        provider: manual
+      authorization:
+        provider: manual
+    manualConfig:
+      configMap:
+        name: mqweb-configmap
+    enabled: true        
   # web:
   #   console:
   #     authentication:
