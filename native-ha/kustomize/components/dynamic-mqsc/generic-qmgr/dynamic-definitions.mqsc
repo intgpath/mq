@@ -1,2 +1,2 @@
 * Use this file for MQSC that you want to be able to update without restarting the queue manager.
-ALTER QLOCAL(IBM.DEMO.Q) MAXDEPTH(15000)
+ALTER QLOCAL(IBM.DEMO.Q) MAXDEPTH(10000)
