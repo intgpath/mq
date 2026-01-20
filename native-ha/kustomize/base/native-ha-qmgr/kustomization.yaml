@@ -17,7 +17,7 @@ configMapGenerator:
   
 secretGenerator:
 # Create an MQSC configMap using generic MQSC which will be added to all queue managers and applied during bootstrap.
-- name: tls-secret-new
+- name: tls-secret
   files:
   - tls.crt=qm1.crt
   - tls.key=qm1.key 
