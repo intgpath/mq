@@ -51,7 +51,7 @@ spec:
     keys:
       - name: qm1
         secret:
-          secretName: tls-secret-new
+          secretName: tls-secret
           items:
           - tls.key
           - tls.crt
